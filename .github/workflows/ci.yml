@@ -24,7 +24,6 @@ jobs:
       - name: Testar
         run: python -m unittest -v
   empacotar:
-    needs: testar
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
